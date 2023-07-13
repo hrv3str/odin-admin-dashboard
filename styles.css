@@ -105,3 +105,35 @@ i {
 .privacy-icon {
     content: url('./images/shield.svg');
 }
+
+/* Header */
+
+.header {
+    grid-column: 2 / -1;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.actions > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    font-family: var(--font-orbitron);
+    color: var(--col-second);
+    justify-items: center;
+}
+
+.actions > ul > li {
+    background-color: var(--col-third);
+    border: 1px solid var(--col-fourth);
+    box-shadow: 0px 0px 3px var(--col-fourth);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    font-weight: 700;
+}
