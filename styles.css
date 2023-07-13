@@ -3,5 +3,17 @@
     --col-first: #f83e4b; 	
     --col-second: #f7e185; 
     --col-third: #cb9bba; 
-    --col-fourth: #9d53c3; 
+    --col-fourth: #9d53c3;
+    --col-fourth-tranc: #9e53c315;
+}
+
+/* Main section */
+.main-container {
+    width: calc(100vw * 0.8);
+    height: calc(100vh * 0.9 );
+    border: 1px solid var(--col-fourth);
+    box-shadow: 0px 0px 3px var(--col-fourth);
+    background-color: var(--col-fourth-tranc);
+    border-radius: 1rem;
+    margin: calc(100vh * 0.05) auto;
 }
