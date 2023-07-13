@@ -7,6 +7,13 @@
     --col-fourth-tranc: #9e53c315;
 }
 
+/* Fonts */
+
+:root {
+    --font-orbitron: Orbitron, serif;
+    --font-exo-two: 'Exo 2', serif
+}
+
 /* Main section */
 .main-container {
     width: calc(100vw * 0.8);
@@ -16,4 +23,85 @@
     background-color: var(--col-fourth-tranc);
     border-radius: 1rem;
     margin: calc(100vh * 0.05) auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1rem;
+    background-color: var(--col-fourth-tranc);
+    border-right: 1px solid var(--col-fourth);
+    box-shadow: 0px 0px 3px var(--col-fourth);
+}
+
+.navigation > * {
+    list-style: none;
+    display: block;
+    font-family: var(--font-exo-two);
+    color: var(--col-fourth);
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+
+i {
+    width: auto;
+    height: 1.1rem;
+    display: inline;
+    margin-right: 10px;
+}
+
+.logo-icon {
+    content: url("./images/sidebar.svg");
+    height: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-orbitron);
+    color: var(--col-first);
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.home-icon {
+    content: url('./images/home.svg');
+}
+
+.profile-icon {
+    content: url('./images/user.svg');
+}
+
+.messages-icon {
+    content: url('./images/message-square.svg');
+}
+
+.history-icon {
+    content: url('./images/clock.svg');
+}
+
+.tasks-icon {
+    content: url('./images/list.svg');
+}
+
+.communities-icon {
+    content: url('./images/users.svg');
+}
+
+.settings-icon {
+    content: url('./images/settings.svg');
+}
+
+.support-icon {
+    content: url('./images/coffee.svg');
+}
+
+.privacy-icon {
+    content: url('./images/shield.svg');
 }
