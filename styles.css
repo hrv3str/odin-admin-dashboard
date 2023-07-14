@@ -56,8 +56,9 @@ i {
 }
 
 .logo-icon {
-    content: url("./images/sidebar.svg");
+    stroke: var(--col-first);
     height: 2rem;
+    width: auto;
 }
 
 .logo {
@@ -70,40 +71,11 @@ i {
     padding: 5px;
 }
 
-.home-icon {
-    content: url('./images/home.svg');
-}
-
-.profile-icon {
-    content: url('./images/user.svg');
-}
-
-.messages-icon {
-    content: url('./images/message-square.svg');
-}
-
-.history-icon {
-    content: url('./images/clock.svg');
-}
-
-.tasks-icon {
-    content: url('./images/list.svg');
-}
-
-.communities-icon {
-    content: url('./images/users.svg');
-}
-
-.settings-icon {
-    content: url('./images/settings.svg');
-}
-
-.support-icon {
-    content: url('./images/coffee.svg');
-}
-
-.privacy-icon {
-    content: url('./images/shield.svg');
+.nav-icon {
+    stroke: var(--col-fourth);
+    height: 1.1rem;
+    width: auto;
+    margin-right: 10px;
 }
 
 /* Header */
