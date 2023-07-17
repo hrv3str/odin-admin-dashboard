@@ -247,8 +247,12 @@ i {
     border: 1px solid var(--col-fourth);
     border-radius: 1rem;
     width: var(--width);
-    height: calc(var(--width) * 1.6);
+    height: calc(var(--width) * 1.2);
     margin: 0 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 6fr 1fr;
 }
 
 .card-container {
@@ -269,7 +273,7 @@ h3 {
     font-family: var(--font-exo-two);
     color: var(--col-first);
     height: fit-content;
-    margin: 3px 10px;
+    margin: 5px 10px;
 }
 
 h3 {
@@ -295,11 +299,62 @@ h3 {
 
 .news-card {
     overflow: hidden;
+    font-family: var(--font-exo-two);
+    color: var(--col-third);
+}
+
+.news-card > p {
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding-left: 1em;
 }
 
 .anoucements-container {
     display: grid;
     grid-template-rows: auto repeat(3 1fr);
+}
+
+.card-left-bar {
+    height: 100%;
+    width: 1rem;
+    background-color: var(--col-fourth);
+    grid-row: 1 / 3;
+}
+
+.card-body {
+    width: 100%;
+    height: 80%;
+    grid-column: 2 / 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5rem;
+    font-family: var(--font-exo-two);
+}
+
+.control-buttons {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, auto);
+    grid-column: 2 / 3;
+}
+
+.control-buttons > svg {
+    fill: var(--col-fourth);
+    opacity: 0.25;
+    height: 2rem;
+    width: auto;
+}
+
+.control-star {
+    grid-column: 2 / 3;
+}
+
+.control-eye {
+    grid-column: 3 / 4
+}
+
+.control-fork {
+    grid-column: 4 / 5;
 }
