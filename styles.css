@@ -5,6 +5,7 @@
     --col-third: #cb9bba; 
     --col-fourth: #9d53c3;
     --col-fourth-tranc: #9e53c315;
+    --col-tranc: transparent;
 }
 
 /* Fonts */
@@ -24,7 +25,7 @@
     border-radius: 1rem;
     margin: calc(100vh * 0.05) auto;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: auto 1fr;
     overflow: hidden;
 }
@@ -222,7 +223,6 @@ i {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows:  auto 1fr;
-    overflow-y: scroll;
 }
 
 .title {
@@ -258,7 +258,7 @@ i {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12.5vw, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     overflow-x: hidden;
 }
 
@@ -357,4 +357,18 @@ h3 {
 
 .control-fork {
     grid-column: 4 / 5;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--col-fourth);
+}
+
+.nav-link:hover * {
+    color: var(--col-third);
+    text-shadow: 0px 0px 3px var(--col-second);
+    stroke: var(--col-tranc);
+    fill: var(--col-tranc);
+    transform: translateX(-10%);
+    transition: 0.2s ease-out;
 }
